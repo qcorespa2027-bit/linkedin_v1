@@ -110,6 +110,29 @@
       "linkedinPostId": null,
       "createdAt": "2026-02-17T17:00:00.000Z"
     }
+    ,
+    {
+      "id": "post-test-1353",
+      "content": "📊 ¿Sabías que el 72% de los directores escolares en Chile toma decisiones sobre retención estudiantil basándose en intuición?\n\nNo es culpa de ellos. Es que hasta ahora no existían herramientas que conectaran los datos en tiempo real.\n\nEn Smart Student transformamos datos dispersos en decisiones inteligentes:\n\n→ Notas + Asistencia + Comportamiento = Dashboard accionable\n→ Alertas automáticas cuando un patrón de riesgo se activa\n→ Reportes listos para el equipo directivo cada lunes\n\n🎯 Dato clave: Los colegios que usan analítica predictiva reducen la deserción hasta en un 35% el primer año.\n\nNo se trata de más datos. Se trata de los datos correctos, en el momento correcto, para la persona correcta.\n\n¿Tu colegio toma decisiones con datos o con supuestos?\n\n🔗 smartstudent.cl\n\n#SmartStudent #DataDriven #AnalíticaEducativa #EdTech #GestiónEscolar #Chile #DecisionesInteligentes",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "13:53",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:30:00.000Z"
+    },
+    {
+      "id": "post-test-1421",
+      "content": "🏫 \"Mi colegio tiene 800 alumnos. ¿Cómo voy a hacer seguimiento personalizado a cada uno?\"\n\nEsa es la pregunta que nos hacen todos los directores. Y la respuesta es simple: no puedes. Pero una IA sí.\n\nSmart Student monitorea a cada estudiante de forma individual y continua:\n\n🟢 Verde: Alumno estable, sin señales de alerta\n🟡 Amarillo: Cambio de patrón detectado, atención sugerida\n🔴 Rojo: Riesgo alto de deserción, intervención necesaria\n\nEl equipo directivo recibe solo lo que necesita: los casos que requieren acción humana.\n\nSin revisar planillas.\nSin cruzar datos a mano.\nSin que ningún alumno pase desapercibido.\n\n💡 800 alumnos, seguimiento individual, cero carga operativa adicional.\n\nEso es lo que significa tener un Sistema Operativo Escolar.\n\n🔗 smartstudent.cl\n\n#SmartStudent #SeguimientoEstudiantil #SistemaOperativoEscolar #EdTech #IA #GestiónEscolar #Chile #RetenciónEscolar",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "14:21",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:30:00.000Z"
+    }
   ],
   "settings": {
     "timezone": "America/Santiago",
