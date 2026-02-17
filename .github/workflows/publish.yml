@@ -4,8 +4,8 @@ on:
   schedule:
     # Corre cada 5 minutos entre 8:00 y 9:35 AM hora Chile (UTC-3 = 11:00-12:35 UTC)
     - cron: '*/5 11-12 * * 1-6'
-    # TEST: también cubre 13:45-14:30 Chile (16:45-17:30 UTC) — BORRAR después de la prueba
-    - cron: '*/5 16-17 * * *'
+    # TEST: cubre 15:00-16:59 Chile (18:00-19:59 UTC) — BORRAR después de la prueba
+    - cron: '*/5 18-19 * * *'
   workflow_dispatch: # Permite ejecutar manualmente desde GitHub
 
 env:
