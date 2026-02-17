@@ -1,0 +1,12 @@
+{
+  "name": "linkedin-publisher",
+  "version": "1.0.0",
+  "description": "Publicador automático de posts en LinkedIn — Smart Student",
+  "private": true,
+  "scripts": {
+    "token": "node src/get-token.js",
+    "publish": "node src/publish.js",
+    "add": "node src/add-post.js",
+    "list": "node src/list-posts.js"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "posts": [],
+  "settings": {
+    "timezone": "America/Santiago",
+    "defaultTime": "09:00",
+    "preferredDays": ["monday", "wednesday", "thursday"]
+  }
+}
