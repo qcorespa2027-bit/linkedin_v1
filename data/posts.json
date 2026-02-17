@@ -142,6 +142,17 @@
       "publishedAt": "2026-02-17T18:07:34.626Z",
       "linkedinPostId": "urn:li:share:7429587336461647872",
       "createdAt": "2026-02-17T17:55:00.000Z"
+    },
+    {
+      "id": "post-test-1771354974492",
+      "content": "🧪 Prueba programada +10 min (post-test-1771354974492).\n\nEste post valida publicación automática vía GitHub Actions, sin depender del contenedor.\n\n#SmartStudent #Test #GitHubActions",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "16:12",
+      "status": "scheduled",
+      "imageUrl": null,
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T19:02:54.492Z"
     }
   ],
   "settings": {
