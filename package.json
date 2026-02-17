@@ -7,6 +7,27 @@
     "token": "node src/get-token.js",
     "publish": "node src/publish.js",
     "add": "node src/add-post.js",
-    "list": "node src/list-posts.js"
+    "list": "node src/list-posts.js",
+    "scheduler": "node src/scheduler.js",
+    "scheduler:bg": "bash run-scheduler.sh",
+    "scheduler:stop": "bash stop-scheduler.sh",
+    "scheduler:status": "bash -c 'if [ -f data/scheduler.pid ] && kill -0 $(cat data/scheduler.pid) 2>/dev/null; then echo \"🟢 Scheduler activo (PID $(cat data/scheduler.pid))\"; else echo \"🔴 Scheduler no está corriendo\"; fi'",
+    "scheduler:log": "tail -50 data/scheduler-log.txt"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcorespa2027-bit/linkedin_v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qcorespa2027-bit/linkedin_v1/issues"
+  },
+  "homepage": "https://github.com/qcorespa2027-bit/linkedin_v1#readme",
+  "dependencies": {
+    "node-cron": "^4.2.1"
   }
 }

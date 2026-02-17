@@ -4,3 +4,6 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+data/scheduler-log.txt
+data/publish-log.txt
+data/scheduler.pid

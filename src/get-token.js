@@ -29,9 +29,15 @@ if (!CLIENT_ID || !CLIENT_SECRET) {
   console.error('❌ Falta LINKEDIN_CLIENT_ID o LINKEDIN_CLIENT_SECRET en .env');
   process.exit(1);
 }
-const REDIRECT_URI = 'http://localhost:3456/callback';
+
 const SCOPES = 'openid profile email w_member_social';
 const PORT = 3456;
+
+// Auto-detect Codespaces environment
+const isCodespaces = process.env.CODESPACES === 'true';
+const REDIRECT_URI = isCodespaces
+  ? `https://${process.env.CODESPACE_NAME}-${PORT}.${process.env.GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}/callback`
+  : `http://localhost:${PORT}/callback`;
 
 const CONFIG_PATH = path.join(__dirname, '..', 'config.json');
 
@@ -45,6 +51,9 @@ const authUrl = [
 
 console.log('\n🔗 LinkedIn Publisher — Obtener Token');
 console.log('═'.repeat(50));
+if (isCodespaces) {
+  console.log('\n☁️  Detectado: GitHub Codespaces');
+}
 console.log('\n⚠️  Asegúrate de tener en LinkedIn Developer → Auth → Redirect URLs:');
 console.log(`   ${REDIRECT_URI}\n`);
 console.log('⏳ Abriendo navegador...\n');
@@ -145,8 +154,20 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`🖥️  Servidor local: http://localhost:${PORT}\n`);
-  exec(`start "" "${authUrl}"`);
+  if (isCodespaces) {
+    console.log(`☁️  URL del servidor: ${REDIRECT_URI.replace('/callback', '')}`);
+    console.log(`\n🔗 Abre este link en tu navegador para autorizar:\n   ${authUrl}\n`);
+  } else {
+    console.log(`🖥️  Servidor local: http://localhost:${PORT}\n`);
+    // Cross-platform browser open
+    const platform = process.platform;
+    const cmd = platform === 'win32' ? `start "" "${authUrl}"`
+              : platform === 'darwin' ? `open "${authUrl}"`
+              : `xdg-open "${authUrl}" 2>/dev/null || echo "🔗 Abre manualmente: ${authUrl}"`;
+    exec(cmd, (err) => {
+      if (err) console.log(`🔗 Abre manualmente en tu navegador:\n   ${authUrl}\n`);
+    });
+  }
 });
 
 function sendHtml(res, title, body) {

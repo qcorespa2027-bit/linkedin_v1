@@ -1,0 +1,42 @@
+name: LinkedIn Auto-Publisher
+
+on:
+  schedule:
+    # Corre cada 5 minutos entre 8:00 y 9:35 AM hora Chile (UTC-3 = 11:00-12:35 UTC)
+    - cron: '*/5 11-12 * * 1-6'
+  workflow_dispatch: # Permite ejecutar manualmente desde GitHub
+
+env:
+  TZ: America/Santiago
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci --omit=dev 2>/dev/null || npm install --omit=dev
+
+      - name: Restore config
+        run: echo "${{ secrets.LINKEDIN_CONFIG }}" | base64 -d > config.json
+
+      - name: Run publisher
+        run: node src/publish.js
+
+      - name: Commit updated posts status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posts.json data/publish-log.txt
+          git diff --staged --quiet || git commit -m "🤖 Auto-publish: actualizar estado de posts [skip ci]"
+          git push

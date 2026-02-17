@@ -1,8 +1,126 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": "post-test-001",
+      "content": "🎓 La educación está cambiando, y en Smart Student estamos liderando esa transformación.\n\nHoy, la Inteligencia Artificial no es solo una herramienta más — es el puente entre el conocimiento y el estudiante.\n\n🤖 En Smart Student creemos que:\n\n✅ Cada estudiante aprende a su propio ritmo\n✅ La tecnología debe adaptarse al alumno, no al revés\n✅ La IA puede personalizar la experiencia educativa como nunca antes\n\nEstamos construyendo el futuro de la educación en Chile y Latinoamérica, combinando tecnología de punta con una visión centrada en las personas.\n\n💡 ¿Te imaginas un mundo donde cada estudiante tenga un tutor inteligente disponible 24/7?\n\nEso ya no es ciencia ficción. Es Smart Student.\n\n#SmartStudent #EdTech #InteligenciaArtificial #Educación #Tecnología #IA #FuturoEducativo #Chile #Innovación",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "00:00",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=1200&q=80",
+      "publishedAt": "2026-02-17T16:08:45.910Z",
+      "linkedinPostId": "urn:li:share:7429557434853134336",
+      "createdAt": "2026-02-17T12:00:00.000Z"
+    },
+    {
+      "id": "post-feb18-iceberg",
+      "content": "📉 Si tu colegio celebra una asistencia del 85%, tienes un problema invisible.\n\nEn 2024, Chile celebró una deserción escolar del 1,3%.\n\nPero nadie habló de los 931.735 estudiantes con inasistencia grave.\n\n🧳 Es el \"Iceberg de la Deserción\":\n\n→ Lo que ves arriba: 1,3% de deserción oficial\n→ Lo que te mata abajo: 26% de ausentismo grave\n\nEl alumno sigue matriculado, pero su mente ya se fue. Es lo que llamamos \"Deserción Silenciosa\" — y es 20 veces más grande que la cifra que aparece en los informes.\n\n¿Qué significa esto para tu colegio?\n\n❌ Subvención calculada sobre asistencia real, no sobre matrícula\n❌ Alumnos que pasan de curso sin aprender\n❌ Equipos directivos reaccionando tarde\n❌ Revinculación costosa cuando ya es demasiado tarde\n\n💡 Smart Student no cuenta la asistencia. Detecta quién se está yendo ANTES de que falte.\n\nNuestro radar de riesgo conecta asistencia + notas + comportamiento para identificar a los estudiantes en zona de peligro — semanas antes de que se conviertan en una estadística.\n\n¿Sabes cuántos de tus alumnos están hoy en la zona de riesgo?\n\nComenta \"Auditoría\" y hablemos.\n\n🔗 smartstudent.cl\n\n#SmartStudent #DesercciónEscolar #Ausentismo #EducaciónChile #EdTech #GestiónEscolar #Subvención #RetenciónEscolar",
+      "scheduledDate": "2026-02-18",
+      "scheduledTime": "08:07",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb19-ia-explicada",
+      "content": "🤖 ¿Cómo sabe una IA que un alumno va a desertar en mayo?\n\nNo es magia. Son patrones.\n\nLa mayoría de los software educativos te dicen qué pasó ayer. Smart Student te dice qué pasará mañana.\n\n🔍 Así funciona nuestro Radar de Riesgo:\n\nCada día, el sistema analiza 3 capas de información por alumno:\n\n1️⃣ Rendimiento académico\n→ No solo el promedio final, sino la TENDENCIA. Una caída de 5.8 a 5.2 en 3 semanas es más alarmante que un 4.5 estable.\n\n2️⃣ Asistencia y puntualidad\n→ ¿Falta los viernes? ¿Llega tarde los lunes? ¿Sus inasistencias son consecutivas o dispersas? El patrón importa más que el número.\n\n3️⃣ Comportamiento y contexto\n→ Anotaciones, retiros anticipados, morosidad del apoderado. Señales que por separado parecen menores, pero juntas forman una alerta clara.\n\n📊 Variables predictivas clave:\nAtrasos reiterados + Bajada en notas parciales + Morosidad = 🔴 Alerta Roja\n\nCuando estas señales se cruzan, el sistema genera un índice de riesgo y notifica al equipo directivo automáticamente.\n\n💡 Deja de conducir tu colegio mirando por el espejo retrovisor.\n\nLa competencia registra datos. Smart Student los convierte en decisiones.\n\n🔗 smartstudent.cl\n\n#SmartStudent #InteligenciaArtificial #MachineLearning #PredicciónEducativa #EdTech #InnovaciónEducativa #Chile #RadarDeRiesgo",
+      "scheduledDate": "2026-02-19",
+      "scheduledTime": "08:23",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb20-burocracia",
+      "content": "⏳ Tu equipo directivo pierde 20 horas semanales haciendo lo que una IA hace en 3 segundos.\n\nHablemos de lo que nadie quiere reconocer:\n\nLos inspectores, orientadores y equipos de convivencia escolar están AGOTADOS. No por los alumnos — por la burocracia.\n\n📋 Un día típico de un inspector:\n\n→ Llamar a 15 apoderados por inasistencia (45 min)\n→ Registrar cada llamada en una planilla (30 min)\n→ Cruzar datos de asistencia con notas a mano (1 hora)\n→ Generar informe de revinculación para Mineduc (2 horas)\n→ Redactar minutas de convivencia escolar (1 hora)\n\n¿Y cuánto tiempo queda para HABLAR con el alumno que lo necesita?\n\nCasi ninguno.\n\n🤖 Smart Student automatiza lo operativo:\n\n✅ Notificaciones automáticas a apoderados (WhatsApp, email, SMS)\n✅ Reportes de revinculación generados al instante\n✅ Minutas de convivencia con trazabilidad digital\n✅ Alertas de riesgo sin intervención manual\n✅ Informes Mineduc listos en 1 clic\n\n💡 La tecnología no reemplaza al docente. Le devuelve tiempo para mirar a los ojos al estudiante.\n\n¿Qué haría tu equipo con 20 horas extra a la semana?\n\nLibera a tu equipo de la burocracia este 2026.\n\n🔗 smartstudent.cl\n\n#SmartStudent #GestiónEscolar #Automatización #EdTech #ProductividadEducativa #Chile #ConvivenciaEscolar #Inspectoría",
+      "scheduledDate": "2026-02-20",
+      "scheduledTime": "08:41",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb23-calculadora",
+      "content": "💸 La cifra que ningún Sostenedor quiere ver: $112.500.000.\n\nEse es el costo proyectado de la deserción para un colegio de 500 alumnos.\n\nNo es un número inventado. Es matemática simple:\n\n📊 El cálculo:\n→ Matrícula: 500 alumnos\n→ Subvención promedio mensual por alumno: ~$150.000\n→ Tasa de fallo en asistencia: 26% (ausentismo grave)\n→ Pérdida anual proyectada por subvención no cobrada + alumnos que desertan\n\nY eso sin contar:\n❌ Costos de revinculación tardía\n❌ Horas del equipo directivo en gestión manual\n❌ Impacto en la imagen institucional\n\n💡 El dato que cambia todo:\n\nNuestro sistema se paga solo reteniendo apenas 6 alumnos al año.\n\nSeis trayectorias salvadas = ROI positivo desde el día 1.\n\n🧮 ¿Quieres ver los números de TU colegio?\n\nCreamos una calculadora gratuita para Sostenedores.\n\n→ Ingresa tu matrícula\n→ Ingresa tu tasa de asistencia\n→ En 30 segundos ves el impacto real\n\n👉 smartstudent.cl/lab\n\nAntes de que entre el primer alumno este marzo, calcula cuánto te costará perderlo.\n\n🔗 smartstudent.cl/lab\n\n#SmartStudent #ROI #Subvención #GestiónFinanciera #Sostenedores #EducaciónChile #EdTech #RetenciónEscolar #InicioDeClases2026",
+      "scheduledDate": "2026-02-23",
+      "scheduledTime": "09:03",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb24-mineduc",
+      "content": "📋 Circular 30 y Reactivación Educativa: ¿Estás listo para la fiscalización?\n\nCada año, Mineduc y la Superintendencia de Educación exigen que los establecimientos gestionen activamente la revinculación de estudiantes en riesgo.\n\nDecreto 67. Circular 30. Plan de Reactivación Educativa.\n\nLa normativa es clara. Pero la realidad de los colegios es otra:\n\n❌ Seguimiento manual en planillas Excel\n❌ Sin registro de intervenciones realizadas\n❌ Informes armados a última hora\n❌ Cero trazabilidad de las acciones\n\n⚠️ Cuando llega la fiscalización, no basta con decir \"hicimos lo posible\". Hay que DEMOSTRARLO.\n\n🤖 Smart Student genera la evidencia digital automática que exige la Superintendencia:\n\n✅ Detección automática de alumnos en riesgo de deserción\n✅ Registro timestamped de cada intervención (quién, cuándo, qué se hizo, resultado)\n✅ Informes de revinculación generados en 1 clic\n✅ Historial de comunicaciones con apoderados (trazable y auditable)\n✅ Dashboard de cumplimiento normativo en tiempo real\n\n💡 No corras riesgos innecesarios por falta de trazabilidad.\n\nProtege tu subvención y tu cumplimiento normativo.\n\n🔗 smartstudent.cl\n\n#SmartStudent #Mineduc #Circular30 #Decreto67 #ReactivaciónEducativa #CumplimientoNormativo #GestiónEscolar #Chile #Superintendencia",
+      "scheduledDate": "2026-02-24",
+      "scheduledTime": "08:14",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb25-comparativa",
+      "content": "🆚 ERP vs. Sistema Operativo Escolar: La gran diferencia.\n\nLa mayoría de los colegios en Chile usan entre 3 y 6 softwares que NO se hablan entre sí.\n\nUno para las notas. Otro para la contabilidad. Excel para la asistencia. WhatsApp para los apoderados.\n\nEl resultado:\n\n❌ Datos duplicados en múltiples plataformas\n❌ Información desactualizada o contradictoria\n❌ Nadie tiene la foto completa del alumno\n❌ Decisiones basadas en intuición, no en evidencia\n\n📊 Software Tradicional (ERP Escolar):\n→ Guarda notas ✓\n→ Cobra mensualidad ✓\n→ Reacciona cuando ya es tarde ✓\n→ Predice riesgos ✗\n→ Automatiza intervenciones ✗\n→ Genera evidencia Mineduc ✗\n\n🚀 Smart Student (Sistema Operativo Escolar):\n→ Predice riesgos con IA ✓\n→ Automatiza gestión y comunicaciones ✓\n→ Recupera ingresos por retención ✓\n→ Genera evidencia normativa automática ✓\n→ Una sola plataforma para TODO ✓\n\n💡 En 2026, tener las notas en la nube no es innovación. Es el estándar mínimo.\n\nLa innovación es la predicción.\n\n¿Tu software actual te hace ganar dinero o solo te cuesta dinero?\n\n🔗 smartstudent.cl\n\n#SmartStudent #SistemaOperativoEscolar #ERP #EdTech #TransformaciónDigital #Colegios #Chile #SoftwareEducativo #Innovación",
+      "scheduledDate": "2026-02-25",
+      "scheduledTime": "08:52",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb26-seguridad",
+      "content": "🔒 IA en el colegio: ¿Qué pasa con los datos de mis alumnos?\n\nEs la primera pregunta que nos hacen. Y es la pregunta correcta.\n\nHablar de Inteligencia Artificial en colegios genera una preocupación legítima: la privacidad de los niños y adolescentes.\n\nEn Smart Student implementamos \"Privacy by Design\" — la privacidad no es un parche, está en la arquitectura desde el día 1.\n\n🛡️ Así protegemos los datos:\n\n1️⃣ Anonimización antes del procesamiento\nLos modelos de IA ven patrones estadísticos, no nombres ni RUT. Los datos se anonimizan ANTES de entrar al motor predictivo. Solo cuando se requiere una intervención, el equipo autorizado accede a la identidad.\n\n2️⃣ Datos almacenados en Chile\nCumplimiento total con la normativa chilena de protección de datos personales.\n\n3️⃣ Acceso por roles estrictos\nCada usuario ve SOLO lo que necesita:\n→ Profesor → su curso\n→ Inspector → su nivel\n→ Director → su colegio\n→ Nadie más → nada\n\n4️⃣ Cifrado de extremo a extremo\nEstándares de seguridad equivalentes al sector bancario.\n\n5️⃣ Sin venta de datos. Nunca. Jamás.\nLos datos son del colegio y de las familias. Punto.\n\n💡 La confianza no se pide. Se demuestra con arquitectura, procesos y transparencia.\n\n¿Quieres conocer nuestro documento técnico de seguridad? Escríbenos.\n\n🔗 smartstudent.cl\n\n#SmartStudent #PrivacidadDeDatos #SeguridadInformática #ProtecciónDeDatos #EdTech #IAResponsable #Chile #Ciberseguridad #PrivacyByDesign",
+      "scheduledDate": "2026-02-26",
+      "scheduledTime": "09:18",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb27-founders",
+      "content": "🚀 ¿Por qué dos hermanos decidieron arreglar la deserción escolar en Chile?\n\nNo empezamos Smart Student por un pitch deck o una oportunidad de mercado.\n\nEmpezamos por algo mucho más simple: rabia.\n\n😤 Rabia de ver que en Chile, el sistema educativo pierde estudiantes todos los días — y nadie conecta los datos que ya existen para evitarlo.\n\nMi hermano y yo crecimos en un entorno donde la educación fue la única puerta. Y sabemos que para miles de familias, esa puerta se cierra demasiado pronto.\n\n🎓 Smart Student nació de una convicción:\n\nSi los datos pueden predecir qué serie vas a ver en Netflix, ¿por qué no pueden predecir qué alumno necesita ayuda antes de que desaparezca?\n\n💡 No somos una multinacional sin rostro.\n\nSomos emprendedores chilenos usando tecnología de punta para mejorar la educación de nuestro país.\n\nCada alumno que el sistema pierde es una promesa rota.\nCada intervención a tiempo es una vida que cambia de rumbo.\n\nEstamos construyendo esto desde Chile, para Latinoamérica, con un equipo que cree que la tecnología tiene que servir a las personas — especialmente a las que el sistema olvida.\n\nA los directores que nos abren las puertas: no busquen un proveedor. Busquen un partner. Eso somos.\n\nGracias a quienes ya confían en nosotros. Esto recién empieza.\n\n🔗 smartstudent.cl\n\n#SmartStudent #Founders #EquidadEducativa #EdTech #StartupChilena #Educación #Propósito #Chile #Emprendimiento #CastroBrothers",
+      "scheduledDate": "2026-02-27",
+      "scheduledTime": "08:36",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    },
+    {
+      "id": "post-feb28-cierre",
+      "content": "🔔 El lunes vuelven a clases. ¿Estás listo para proteger sus trayectorias?\n\nEsta semana compartimos datos que incomodan:\n\n📉 931.735 estudiantes con ausentismo grave en 2024\n💸 $112 millones en pérdidas proyectadas por deserción\n⏳ 20 horas semanales perdidas en burocracia\n📋 Colegios sin trazabilidad para fiscalizaciones Mineduc\n\nLa deserción no empieza cuando el alumno deja de venir.\nEmpieza el primer día que nadie se da cuenta de que algo cambió.\n\n🎒 Este lunes de marzo, miles de estudiantes volverán a clases.\n\nAlgunos llegarán motivados.\nOtros llegarán arrastrando los pies.\nY algunos ya están pensando en no volver.\n\n¿Tu colegio tiene las herramientas para detectar la diferencia?\n\n🚀 Ofrecemos una Demo Express para la primera semana de marzo.\n\n→ 30 minutos\n→ Con los datos de tu colegio\n→ Sin compromiso\n\n💡 Empecemos el año escolar con el pie derecho y los datos claros.\n\nEscríbenos por DM o agenda directamente en:\n👉 smartstudent.cl\n\n#SmartStudent #InicioDeClases2026 #Marzo2026 #EducaciónChile #EdTech #Demo #GestiónEscolar #RetenciónEscolar #Subvención #VueltaAClases",
+      "scheduledDate": "2026-02-28",
+      "scheduledTime": "09:11",
+      "status": "scheduled",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80",
+      "publishedAt": null,
+      "linkedinPostId": null,
+      "createdAt": "2026-02-17T17:00:00.000Z"
+    }
+  ],
   "settings": {
     "timezone": "America/Santiago",
     "defaultTime": "09:00",
-    "preferredDays": ["monday", "wednesday", "thursday"]
+    "preferredDays": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday"
+    ]
   }
 }

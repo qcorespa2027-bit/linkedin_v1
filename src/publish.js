@@ -9,17 +9,89 @@ const CONFIG_PATH = path.join(__dirname, '..', 'config.json');
 const POSTS_PATH = path.join(__dirname, '..', 'data', 'posts.json');
 const LOG_PATH = path.join(__dirname, '..', 'data', 'publish-log.txt');
 
+// ─── Upload image to LinkedIn ───
+async function uploadImage(config, imageUrl) {
+  try {
+    // 1. Register upload
+    const registerRes = await fetch('https://api.linkedin.com/v2/assets?action=registerUpload', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${config.access_token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        registerUploadRequest: {
+          recipes: ['urn:li:digitalmediaRecipe:feedshare-image'],
+          owner: `urn:li:person:${config.person_id}`,
+          serviceRelationships: [{
+            relationshipType: 'OWNER',
+            identifier: 'urn:li:userGeneratedContent'
+          }]
+        }
+      })
+    });
+
+    if (!registerRes.ok) {
+      const errText = await registerRes.text();
+      console.error(`   ⚠️  Register upload failed: ${errText}`);
+      return null;
+    }
+
+    const registerData = await registerRes.json();
+    const uploadUrl = registerData.value.uploadMechanism['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest'].uploadUrl;
+    const asset = registerData.value.asset;
+
+    // 2. Download image from URL
+    const imgRes = await fetch(imageUrl);
+    if (!imgRes.ok) {
+      console.error(`   ⚠️  Failed to download image: ${imgRes.status}`);
+      return null;
+    }
+    const imgBuffer = Buffer.from(await imgRes.arrayBuffer());
+
+    // 3. Upload binary to LinkedIn
+    const uploadRes = await fetch(uploadUrl, {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${config.access_token}`,
+        'Content-Type': 'application/octet-stream'
+      },
+      body: imgBuffer
+    });
+
+    if (!uploadRes.ok && uploadRes.status !== 201) {
+      console.error(`   ⚠️  Upload failed: ${uploadRes.status}`);
+      return null;
+    }
+
+    return asset;
+  } catch (err) {
+    console.error(`   ⚠️  Image upload error: ${err.message}`);
+    return null;
+  }
+}
+
 async function main() {
   console.log('\n🔗 LinkedIn Publisher — Publicar');
   console.log('═'.repeat(50));
   console.log(`⏰ ${new Date().toLocaleString('es-CL')}\n`);
 
-  // 1. Load config
-  if (!fs.existsSync(CONFIG_PATH)) {
-    console.error('❌ No hay config.json — Ejecuta primero: npm run token');
+  // 1. Load config (from file or environment variables for CI/CD)
+  let config;
+  if (process.env.LINKEDIN_ACCESS_TOKEN && process.env.LINKEDIN_PERSON_ID) {
+    console.log('☁️  Modo CI/CD (GitHub Actions)');
+    config = {
+      access_token: process.env.LINKEDIN_ACCESS_TOKEN,
+      person_id: process.env.LINKEDIN_PERSON_ID,
+      person_name: process.env.LINKEDIN_PERSON_NAME || 'CI',
+      expires_at: process.env.LINKEDIN_TOKEN_EXPIRES || new Date(Date.now() + 86400000).toISOString()
+    };
+  } else if (fs.existsSync(CONFIG_PATH)) {
+    config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
+  } else {
+    console.error('❌ No hay config.json ni variables de entorno — Ejecuta primero: npm run token');
     process.exit(1);
   }
-  const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
 
   // Check token expiration
   if (new Date(config.expires_at) < new Date()) {
@@ -82,13 +154,26 @@ async function main() {
     console.log(`📤 "${preview}..."`);
 
     try {
+      let imageAsset = null;
+
+      // Upload image if provided
+      if (post.imageUrl) {
+        console.log(`   🖼️  Subiendo imagen...`);
+        imageAsset = await uploadImage(config, post.imageUrl);
+        if (imageAsset) {
+          console.log(`   🖼️  Imagen subida: ${imageAsset}`);
+        } else {
+          console.log(`   ⚠️  No se pudo subir imagen, publicando sin imagen`);
+        }
+      }
+
       const body = {
         author: `urn:li:person:${config.person_id}`,
         lifecycleState: 'PUBLISHED',
         specificContent: {
           'com.linkedin.ugc.ShareContent': {
             shareCommentary: { text: post.content },
-            shareMediaCategory: 'NONE'
+            shareMediaCategory: imageAsset ? 'IMAGE' : 'NONE'
           }
         },
         visibility: {
@@ -96,11 +181,10 @@ async function main() {
         }
       };
 
-      if (post.imageUrl) {
-        body.specificContent['com.linkedin.ugc.ShareContent'].shareMediaCategory = 'IMAGE';
+      if (imageAsset) {
         body.specificContent['com.linkedin.ugc.ShareContent'].media = [{
           status: 'READY',
-          originalUrl: post.imageUrl,
+          media: imageAsset,
           description: { text: 'Smart Student' },
           title: { text: 'Smart Student' }
         }];
