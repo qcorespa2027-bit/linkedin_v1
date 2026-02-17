@@ -2,10 +2,8 @@ name: LinkedIn Auto-Publisher
 
 on:
   schedule:
-    # Corre cada 5 minutos entre 8:00 y 9:35 AM hora Chile (UTC-3 = 11:00-12:35 UTC)
-    - cron: '*/5 11-12 * * 1-6'
-    # TEST: cubre 15:00-16:59 Chile (18:00-19:59 UTC) — BORRAR después de la prueba
-    - cron: '*/5 18-19 * * *'
+    # Corre cada 10 minutos, lunes a sábado (UTC). El script evalúa hora Chile.
+    - cron: '*/10 * * * 1-6'
   workflow_dispatch: # Permite ejecutar manualmente desde GitHub
 
 env:
@@ -13,6 +11,10 @@ env:
 
 permissions:
   contents: write
+
+concurrency:
+  group: linkedin-auto-publisher
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -31,6 +33,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci --omit=dev 2>/dev/null || npm install --omit=dev
+
+      - name: Validate required secret
+        run: |
+          if [ -z "${{ secrets.LINKEDIN_CONFIG }}" ]; then
+            echo "❌ Falta el secret LINKEDIN_CONFIG (base64 de config.json)"
+            exit 1
+          fi
 
       - name: Restore config
         run: echo "${{ secrets.LINKEDIN_CONFIG }}" | base64 -d > config.json

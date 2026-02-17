@@ -115,10 +115,10 @@
       "content": "📊 ¿Sabías que el 72% de los directores escolares en Chile toma decisiones sobre retención estudiantil basándose en intuición?\n\nNo es culpa de ellos. Es que hasta ahora no existían herramientas que conectaran los datos en tiempo real.\n\nEn Smart Student transformamos datos dispersos en decisiones inteligentes:\n\n→ Notas + Asistencia + Comportamiento = Dashboard accionable\n→ Alertas automáticas cuando un patrón de riesgo se activa\n→ Reportes listos para el equipo directivo cada lunes\n\n🎯 Dato clave: Los colegios que usan analítica predictiva reducen la deserción hasta en un 35% el primer año.\n\nNo se trata de más datos. Se trata de los datos correctos, en el momento correcto, para la persona correcta.\n\n¿Tu colegio toma decisiones con datos o con supuestos?\n\n🔗 smartstudent.cl\n\n#SmartStudent #DataDriven #AnalíticaEducativa #EdTech #GestiónEscolar #Chile #DecisionesInteligentes",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "15:15",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-17T19:08:00.051Z",
+      "linkedinPostId": "urn:li:share:7429602540167630848",
       "createdAt": "2026-02-17T17:30:00.000Z"
     },
     {
@@ -126,10 +126,10 @@
       "content": "🏫 \"Mi colegio tiene 800 alumnos. ¿Cómo voy a hacer seguimiento personalizado a cada uno?\"\n\nEsa es la pregunta que nos hacen todos los directores. Y la respuesta es simple: no puedes. Pero una IA sí.\n\nSmart Student monitorea a cada estudiante de forma individual y continua:\n\n🟢 Verde: Alumno estable, sin señales de alerta\n🟡 Amarillo: Cambio de patrón detectado, atención sugerida\n🔴 Rojo: Riesgo alto de deserción, intervención necesaria\n\nEl equipo directivo recibe solo lo que necesita: los casos que requieren acción humana.\n\nSin revisar planillas.\nSin cruzar datos a mano.\nSin que ningún alumno pase desapercibido.\n\n💡 800 alumnos, seguimiento individual, cero carga operativa adicional.\n\nEso es lo que significa tener un Sistema Operativo Escolar.\n\n🔗 smartstudent.cl\n\n#SmartStudent #SeguimientoEstudiantil #SistemaOperativoEscolar #EdTech #IA #GestiónEscolar #Chile #RetenciónEscolar",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "15:35",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80",
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-17T19:08:00.051Z",
+      "linkedinPostId": "urn:li:share:7429602545418792960",
       "createdAt": "2026-02-17T17:30:00.000Z"
     },
     {
@@ -148,22 +148,45 @@
       "content": "🧪 Prueba programada +10 min (post-test-1771354974492).\n\nEste post valida publicación automática vía GitHub Actions, sin depender del contenedor.\n\n#SmartStudent #Test #GitHubActions",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "16:12",
-      "status": "scheduled",
+      "status": "failed",
       "imageUrl": null,
       "publishedAt": null,
       "linkedinPostId": null,
-      "createdAt": "2026-02-17T19:02:54.492Z"
+      "createdAt": "2026-02-17T19:02:54.492Z",
+      "errorMessage": "API 422: {\"errorDetailType\":\"com.linkedin.common.error.BadRequest\",\"message\":\"com.linkedin.content.common.exception.BadRequestResponseException: Content is a duplicate of urn:li:share:7429602547868327937\",\"errorDetails\":{\"inputErrors\":[{\"description\":\"Duplicate post is detected\",\"input\":{},\"code\":\"DUPLICATE_POST\"}]},\"status\":422}"
     },
     {
       "id": "post-1771355260114",
       "content": "🎯 3 de cada 10 estudiantes en Chile tienen ausentismo grave. Y la mayoría de los colegios se entera demasiado tarde.\n\nEl problema no es falta de voluntad. Es falta de visibilidad.\n\nHoy, un inspector puede tardar semanas en detectar que un alumno pasó de faltar 1 día al mes a faltar 3 días por semana. Para cuando lo nota, el estudiante ya está desconectado emocionalmente del colegio.\n\n📊 ¿Qué pasaría si pudieras detectar esa tendencia en tiempo real?\n\nEn Smart Student construimos exactamente eso: un radar que cruza asistencia + rendimiento + comportamiento y genera alertas automáticas ANTES de que la situación sea crítica.\n\nNo reemplazamos al equipo directivo. Le damos superpoderes.\n\n→ Detección temprana de riesgo de deserción\n→ Notificaciones automáticas a apoderados\n→ Reportes de intervención listos para Mineduc\n→ Todo en una sola plataforma\n\n💡 La diferencia entre perder un alumno y retenerlo muchas veces es una semana de acción temprana.\n\n¿Tu colegio tiene esa semana de ventaja?\n\n🔗 smartstudent.cl\n\n#SmartStudent #EducaciónChile #RetenciónEscolar #EdTech #InteligenciaArtificial #GestiónEscolar #Innovación #DetecciónTemprana",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "16:17",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+      "publishedAt": "2026-02-17T19:08:00.051Z",
+      "linkedinPostId": "urn:li:share:7429602550124961793",
+      "createdAt": "2026-02-17T19:07:40.114Z"
+    },
+    {
+      "id": "post-test-auto-1771356728816",
+      "content": "🧪 Prueba automática programada (+10 min) — post-test-auto-1771356728816.\n\nEste post valida que GitHub Actions publique aunque el Codespace esté cerrado.\n\n#SmartStudent #Test #GitHubActions #AutoPublish",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "16:42",
+      "status": "published",
+      "imageUrl": null,
+      "publishedAt": "2026-02-17T19:33:00.047Z",
+      "linkedinPostId": "urn:li:share:7429608828968546304",
+      "createdAt": "2026-02-17T19:32:08.802Z"
+    },
+    {
+      "id": "post-test-backup-1771356846575",
+      "content": "🛟 Respaldo automático (+20 min) — post-test-backup-1771356846575 — dq6fag.\n\nPost alternativo para validar autopublicación por GitHub Actions con Codespace cerrado.\n\n#SmartStudent #Backup #GitHubActions #AutoPublish",
+      "scheduledDate": "2026-02-17",
+      "scheduledTime": "16:54",
+      "status": "scheduled",
+      "imageUrl": null,
       "publishedAt": null,
       "linkedinPostId": null,
-      "createdAt": "2026-02-17T19:07:40.114Z"
+      "createdAt": "2026-02-17T19:34:06.525Z"
     }
   ],
   "settings": {

@@ -39,7 +39,23 @@ npm run scheduler
 npm run scheduler:bg
 ```
 
+⚠️ Este scheduler es **local**. Si cierras VS Code/Codespace o apagas tu equipo, deja de correr.
+
 El scheduler revisa cada 15 minutos (lunes a viernes, 8am–8pm, hora Chile) si hay posts listos y los publica automáticamente.
+
+## Publicación automática con Codespace cerrado (GitHub Actions)
+
+Para que publique aunque no tengas el entorno abierto:
+
+1. Configura el secret `LINKEDIN_CONFIG` (base64 de `config.json`).
+2. Agrega/edita posts en `data/posts.json`.
+3. Haz commit y push a `main`.
+
+El workflow `.github/workflows/publish.yml` corre automáticamente cada 10 minutos (lunes a sábado) y publica los posts cuyo horario ya pasó (hora `America/Santiago`).
+
+Si no haces push, GitHub Actions no verá los nuevos posts.
+
+Contexto operativo y checklist de continuidad: `docs/HANDOFF-2026-02-17.md`.
 
 **Personalizar horario:**
 ```bash
