@@ -12,7 +12,9 @@
     "scheduler:bg": "bash run-scheduler.sh",
     "scheduler:stop": "bash stop-scheduler.sh",
     "scheduler:status": "bash -c 'if [ -f data/scheduler.pid ] && kill -0 $(cat data/scheduler.pid) 2>/dev/null; then echo \"🟢 Scheduler activo (PID $(cat data/scheduler.pid))\"; else echo \"🔴 Scheduler no está corriendo\"; fi'",
-    "scheduler:log": "tail -50 data/scheduler-log.txt"
+    "scheduler:log": "tail -50 data/scheduler-log.txt",
+    "config:base64": "base64 -w 0 config.json && echo",
+    "cloud:test": "echo 'Usa: curl -X POST -H \"Accept: application/vnd.github+json\" -H \"Authorization: Bearer TU_PAT\" https://api.github.com/repos/qcorespa2027-bit/linkedin_v1/dispatches -d {\"event_type\":\"publish-linkedin\"}'"
   },
   "main": "index.js",
   "repository": {

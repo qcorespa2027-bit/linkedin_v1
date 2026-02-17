@@ -1,10 +1,18 @@
 name: LinkedIn Auto-Publisher
 
 on:
+  # 1. Webhook externo (cron-job.org / EasyCron llama a este endpoint)
+  repository_dispatch:
+    types: [publish-linkedin]
+
+  # 2. Cron de respaldo — cada 15 min lun-vie 8am-20pm Chile (= 11:00-23:00 UTC)
   schedule:
-    # Corre cada 10 minutos, todos los días (UTC). El script evalúa hora Chile.
-    - cron: '*/10 * * * *'
-  workflow_dispatch: # Permite ejecutar manualmente desde GitHub
+    - cron: '*/15 11-23 * * 1-5'
+
+  # 3. Botón manual desde GitHub Actions
+  workflow_dispatch:
+
+  # 4. Al actualizar posts.json
   push:
     paths:
       - 'data/posts.json'
