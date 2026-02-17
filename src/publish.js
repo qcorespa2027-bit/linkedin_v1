@@ -202,6 +202,18 @@ async function main() {
 
       if (!res.ok) {
         const errText = await res.text();
+
+        // Handle DUPLICATE_POST: the content already exists on LinkedIn
+        if (res.status === 422 && errText.includes('DUPLICATE_POST')) {
+          post.status = 'published';
+          post.publishedAt = now.toISOString();
+          post.linkedinPostId = 'duplicate-detected';
+          okCount++;
+          console.log(`   ⚠️  LinkedIn indica contenido duplicado — marcando como publicado\n`);
+          log(`DUPLICATE_OK | ${post.id} | Content already exists on LinkedIn`);
+          continue;
+        }
+
         throw new Error(`API ${res.status}: ${errText}`);
       }
 

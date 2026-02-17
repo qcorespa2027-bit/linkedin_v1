@@ -148,12 +148,11 @@
       "content": "🧪 Prueba programada +10 min (post-test-1771354974492).\n\nEste post valida publicación automática vía GitHub Actions, sin depender del contenedor.\n\n#SmartStudent #Test #GitHubActions",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "16:12",
-      "status": "failed",
+      "status": "published",
       "imageUrl": null,
-      "publishedAt": null,
-      "linkedinPostId": null,
-      "createdAt": "2026-02-17T19:02:54.492Z",
-      "errorMessage": "API 422: {\"errorDetailType\":\"com.linkedin.common.error.BadRequest\",\"message\":\"com.linkedin.content.common.exception.BadRequestResponseException: Content is a duplicate of urn:li:share:7429602547868327937\",\"errorDetails\":{\"inputErrors\":[{\"description\":\"Duplicate post is detected\",\"input\":{},\"code\":\"DUPLICATE_POST\"}]},\"status\":422}"
+      "publishedAt": "2026-02-17T19:01:00.445Z",
+      "linkedinPostId": "urn:li:share:7429600775900848129",
+      "createdAt": "2026-02-17T19:02:54.492Z"
     },
     {
       "id": "post-1771355260114",

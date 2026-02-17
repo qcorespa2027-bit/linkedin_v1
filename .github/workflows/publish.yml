@@ -44,6 +44,10 @@ jobs:
       - name: Restore config
         run: echo "${{ secrets.LINKEDIN_CONFIG }}" | base64 -d > config.json
 
+      - name: Pull latest state
+        run: |
+          git pull --rebase origin main || true
+
       - name: Run publisher
         run: node src/publish.js
 
