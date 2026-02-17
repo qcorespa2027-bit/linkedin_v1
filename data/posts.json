@@ -171,10 +171,10 @@
       "content": "🧪 Prueba automática programada (+10 min) — post-test-auto-1771356728816.\n\nEste post valida que GitHub Actions publique aunque el Codespace esté cerrado.\n\n#SmartStudent #Test #GitHubActions #AutoPublish",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "16:43",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": null,
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-17T19:46:17.870Z",
+      "linkedinPostId": "urn:li:share:7429612175540826112",
       "createdAt": "2026-02-17T19:32:08.802Z"
     },
     {
@@ -182,10 +182,10 @@
       "content": "🛟 Respaldo automático (+20 min) — post-test-backup-1771356846575 — dq6fag.\n\nPost alternativo para validar autopublicación por GitHub Actions con Codespace cerrado.\n\n#SmartStudent #Backup #GitHubActions #AutoPublish",
       "scheduledDate": "2026-02-17",
       "scheduledTime": "16:46",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": null,
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-17T19:46:17.870Z",
+      "linkedinPostId": "urn:li:share:7429612177076101120",
       "createdAt": "2026-02-17T19:34:06.525Z"
     }
   ],
