@@ -27,10 +27,10 @@
       "content": "🤖 ¿Cómo sabe una IA que un alumno va a desertar en mayo?\n\nNo es magia. Son patrones.\n\nLa mayoría de los software educativos te dicen qué pasó ayer. Smart Student te dice qué pasará mañana.\n\n🔍 Así funciona nuestro Radar de Riesgo:\n\nCada día, el sistema analiza 3 capas de información por alumno:\n\n1️⃣ Rendimiento académico\n→ No solo el promedio final, sino la TENDENCIA. Una caída de 5.8 a 5.2 en 3 semanas es más alarmante que un 4.5 estable.\n\n2️⃣ Asistencia y puntualidad\n→ ¿Falta los viernes? ¿Llega tarde los lunes? ¿Sus inasistencias son consecutivas o dispersas? El patrón importa más que el número.\n\n3️⃣ Comportamiento y contexto\n→ Anotaciones, retiros anticipados, morosidad del apoderado. Señales que por separado parecen menores, pero juntas forman una alerta clara.\n\n📊 Variables predictivas clave:\nAtrasos reiterados + Bajada en notas parciales + Morosidad = 🔴 Alerta Roja\n\nCuando estas señales se cruzan, el sistema genera un índice de riesgo y notifica al equipo directivo automáticamente.\n\n💡 Deja de conducir tu colegio mirando por el espejo retrovisor.\n\nLa competencia registra datos. Smart Student los convierte en decisiones.\n\n🔗 smartstudent.cl\n\n#SmartStudent #InteligenciaArtificial #MachineLearning #PredicciónEducativa #EdTech #InnovaciónEducativa #Chile #RadarDeRiesgo",
       "scheduledDate": "2026-02-19",
       "scheduledTime": "08:23",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80",
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-19T12:05:15.661Z",
+      "linkedinPostId": "urn:li:share:7430220930674626560",
       "createdAt": "2026-02-17T17:00:00.000Z"
     },
     {
