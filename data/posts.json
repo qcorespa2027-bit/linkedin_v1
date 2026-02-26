@@ -82,10 +82,10 @@
       "content": "🔒 IA en el colegio: ¿Qué pasa con los datos de mis alumnos?\n\nEs la primera pregunta que nos hacen. Y es la pregunta correcta.\n\nHablar de Inteligencia Artificial en colegios genera una preocupación legítima: la privacidad de los niños y adolescentes.\n\nEn Smart Student implementamos \"Privacy by Design\" — la privacidad no es un parche, está en la arquitectura desde el día 1.\n\n🛡️ Así protegemos los datos:\n\n1️⃣ Anonimización antes del procesamiento\nLos modelos de IA ven patrones estadísticos, no nombres ni RUT. Los datos se anonimizan ANTES de entrar al motor predictivo. Solo cuando se requiere una intervención, el equipo autorizado accede a la identidad.\n\n2️⃣ Datos almacenados en Chile\nCumplimiento total con la normativa chilena de protección de datos personales.\n\n3️⃣ Acceso por roles estrictos\nCada usuario ve SOLO lo que necesita:\n→ Profesor → su curso\n→ Inspector → su nivel\n→ Director → su colegio\n→ Nadie más → nada\n\n4️⃣ Cifrado de extremo a extremo\nEstándares de seguridad equivalentes al sector bancario.\n\n5️⃣ Sin venta de datos. Nunca. Jamás.\nLos datos son del colegio y de las familias. Punto.\n\n💡 La confianza no se pide. Se demuestra con arquitectura, procesos y transparencia.\n\n¿Quieres conocer nuestro documento técnico de seguridad? Escríbenos.\n\n🔗 smartstudent.cl\n\n#SmartStudent #PrivacidadDeDatos #SeguridadInformática #ProtecciónDeDatos #EdTech #IAResponsable #Chile #Ciberseguridad #PrivacyByDesign",
       "scheduledDate": "2026-02-26",
       "scheduledTime": "09:18",
-      "status": "scheduled",
+      "status": "published",
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&q=80",
-      "publishedAt": null,
-      "linkedinPostId": null,
+      "publishedAt": "2026-02-26T14:16:08.508Z",
+      "linkedinPostId": "urn:li:share:7432790582109954048",
       "createdAt": "2026-02-17T17:00:00.000Z"
     },
     {
